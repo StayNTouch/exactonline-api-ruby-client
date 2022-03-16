@@ -7,5 +7,9 @@ module Elmas
     def base_path
       "generaljournalentry/GeneralJournalEntryLines"
     end
+
+    def other_attributes
+      super.concat(%i[date])
+    end
   end
 end
